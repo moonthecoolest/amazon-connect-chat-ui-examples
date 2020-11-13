@@ -99,6 +99,7 @@ Resources:
             Action:
               - "sts:AssumeRole"
       Path: "/"
+      PermissionsBoundary: arn:aws:iam::190723000000:policy/PermissionBoundary-CFN
       Policies:
         - PolicyName: start-chat-contact-execution-policy
           PolicyDocument:
